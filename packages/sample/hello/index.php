@@ -7,7 +7,7 @@ function main(array $args) : array
     $greeting = "Hello {$name}!";
     echo $greeting;
 
-   error_log($greeting);
+   error_log($greeting, 0); // 0 sends the output to stdout
  
     return [
         'body' => $greeting,
